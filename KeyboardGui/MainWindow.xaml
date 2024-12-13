@@ -1,0 +1,60 @@
+﻿<Window x:Class="KeyboardGui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyboardGui.Controls"
+        xmlns:m="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Height="800" 
+        Width="1300"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Border>
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/Backround.jpg" Stretch="Fill"/>
+        </Border.Background>
+
+        <Border Width="900"
+                Height="350"
+                Background="#ced4da"
+                CornerRadius="50">
+            <Border Width="875"
+                    Height="325"
+                    CornerRadius="30"
+                    BorderThickness="10"
+                    BorderBrush="#f8f9fa">
+
+                <Border.Background>
+                    <SolidColorBrush Color="#6c757d" Opacity="0.3"/>
+                </Border.Background>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="37.5"/>
+                        <RowDefinition Height="49.5"/>
+                        <RowDefinition Height="49.5"/>
+                        <RowDefinition Height="49.5"/>
+                        <RowDefinition Height="49.5"/>
+                        <RowDefinition Height="49.5"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+
+                    <local:row1 Grid.Row="1"/>
+                    <local:row2 Grid.Row="2"/>
+                    <local:row3 Grid.Row="3"/>
+                    <local:row4 Grid.Row="4"/>
+                    <local:row5 Grid.Row="5"/>
+                    <local:row6 Grid.Row="6"/>
+
+                </Grid>
+                
+            </Border>
+        </Border>
+        
+    </Border>
+</Window>

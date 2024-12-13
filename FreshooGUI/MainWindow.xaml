@@ -1,0 +1,133 @@
+﻿<Window x:Class="FreshooGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreshooGUI"
+        xmlns:material="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Height="650" 
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Grid>
+        <Border Style="{StaticResource mainBorder}"/>
+
+        <Path Fill="#343a40" Panel.ZIndex="1">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="5,5" IsClosed="True">
+                        <!--Top Side-->
+                        <LineSegment Point="795,5"/>
+                        
+                        <!--Arc-->
+                        <ArcSegment Point="795,645"
+                                    Size="700, 700"
+                                    SweepDirection="Counterclockwise"/>
+                        
+                        <!--Bootom Side-->
+                        <LineSegment Point="5, 645"/>
+                        
+                        <!--Left Side-->
+                        <LineSegment Point="5, 0"/>
+
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        
+        <!--Image-->
+        <Image Source="/Images/Orange.jpg" HorizontalAlignment="Right"
+               Margin="0 6 6 6"
+               Width="350"
+               Stretch="Fill"/>
+
+        <Grid Panel.ZIndex="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="480*"/>
+                <RowDefinition Height="80*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
+                    <Image Style="{StaticResource logoIcon}"/>
+                    <TextBlock Text="FRESHOO"
+                               Style="{StaticResource logoText}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Right"
+                            Margin="400 0 0 0">
+                    <TextBlock Text="HOME"
+                        Style="{StaticResource pageNavText}"/>
+                    <TextBlock Text="ABOUT"
+                        Style="{StaticResource pageNavText}"/>
+                    <TextBlock Text="CONTACT"
+                        Style="{StaticResource pageNavText}"/>
+                    <material:PackIcon Kind="Cart"
+                                       Style="{StaticResource cartIcon}"/>
+                </StackPanel>
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="300*"/>
+                    <ColumnDefinition Width="500*"/>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="1"
+                       Source="/Images/Orange1.png"
+                       Width="350"
+                       Height="300">
+                    <Image.Effect>
+                        <DropShadowEffect BlurRadius="15"
+                                          Opacity="0.9"
+                                          ShadowDepth="10"
+                                          Direction="315"/>
+                    </Image.Effect>
+                </Image>
+
+                <StackPanel Orientation="Vertical"
+                            Grid.Column="2"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="30 60 0 0">
+                    <TextBlock Text="USEFULL"
+                        Style="{StaticResource disName1}"/>
+                    <TextBlock Text="DELICIOUS"
+                        Style="{StaticResource disName1}"/>
+                    <TextBlock Text="ORANGES"
+                        Style="{StaticResource disName1}"/>
+                    <TextBlock Text="₹ 200"
+                               FontSize="25"
+                               Foreground="#e9ecef"
+                               Margin="0 20 0 0"
+                               FontFamily="{StaticResource texts}"/>
+                    <TextBlock Text="Oranges are round, orange-colored citrus fruits that grow on trees. They originally came from China, but today these nutritious powerhouses are grown in warm climates around the world. 
+                               Every type of orange has more than 100% of your recommended daily amount of vitamin C. 
+                               That's more than any other citrus fruit."
+                               FontSize="10"
+                               TextWrapping="Wrap"
+                               Foreground="#e9ecef"
+                               Margin="0 20 0 0"
+                               FontFamily="{StaticResource texts}"/>
+                    <Button Content="ADD TO CART"
+                            Style="{StaticResource addToCartBtn}"/>
+                </StackPanel>
+                
+            </Grid>
+            
+
+        </Grid>
+
+
+
+
+    </Grid>
+</Window>

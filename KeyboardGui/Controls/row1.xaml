@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="KeyboardGui.Controls.row1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:m="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:KeyboardGui.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="1000">
+    <Grid>
+        <UniformGrid Columns="17" Margin="10,0,10,0">
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="esc"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+
+            <Button Width="40" Height="20"  Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f1"/>
+                        <m:PackIcon Kind="Mute"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f2"/>
+                        <m:PackIcon Kind="VolumeLow"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f3"/>
+                        <m:PackIcon Kind="VolumeHigh"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f4"/>
+                        <m:PackIcon Kind="BrightnessLow"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f5"/>
+                        <m:PackIcon Kind="BrightnessHigh"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f6"/>
+                        <Image Source="/Images/touchpad.png" Width="15" Height="15"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f7"/>
+                        <Image Source="/Images/keyboardBrightness.png" Width="15" Height="15"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f8"/>
+                        <Image Source="/Images/display.png" Width="15" Height="15"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f9" FontSize="8"/>
+                        <TextBlock Text="home"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f10" FontSize="8"/>
+                        <TextBlock Text="end"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f11" FontSize="8"/>
+                        <TextBlock Text="pgup"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="f12" FontSize="8"/>
+                        <TextBlock Text="pgdn"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="prt sc"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="insert"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="delete"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Width="40" Height="20" Style="{StaticResource functionKeys}" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <m:PackIcon Kind="Shutdown"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </UniformGrid>
+
+    </Grid>
+</UserControl>

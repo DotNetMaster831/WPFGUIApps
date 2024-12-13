@@ -1,0 +1,22 @@
+﻿<Application x:Class="SimpleCalculator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SimpleCalculator"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DropShadowEffect x:Key="shadowEffect" BlurRadius="15" ShadowDepth="5" Color="Black" Opacity="0.4"/>
+
+        <LinearGradientBrush x:Key="gradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#ecadad" Offset="0.2"/>
+            <GradientStop Color="#FFFFFF" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <RotateTransform x:Key="ButtonRotate" Angle="45" CenterX="22" CenterY="22"/>
+
+        <RotateTransform x:Key="rotateIcon" Angle="-46" CenterX="12" CenterY="12"/>
+
+        <RotateTransform x:Key="RotateTextBlock" Angle="-46" CenterX="7" CenterY="20"/>
+
+        <DropShadowEffect x:Key="buttonShadowEffect" BlurRadius="5" ShadowDepth="5" Color="#B0B0B0" Opacity="0.7"/>
+    </Application.Resources>
+</Application>
